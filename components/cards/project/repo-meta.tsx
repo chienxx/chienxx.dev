@@ -30,7 +30,7 @@ export function RepoMeta({ repo }: { repo: GithubRepository }) {
               target="_blank"
               rel="noreferrer"
               className="flex items-center"
-              data-umami-event="project-demo"
+              plausible-event-name="project-demo"
             >
               <ExternalLink size={20} strokeWidth={1.5} />
             </a>
@@ -42,7 +42,7 @@ export function RepoMeta({ repo }: { repo: GithubRepository }) {
           target="_blank"
           rel="noreferrer"
           className="flex items-center space-x-1"
-          data-umami-event="project-repo"
+          plausible-event-name="project-repo"
         >
           <Github size={20} strokeWidth={1.5} />
         </a>

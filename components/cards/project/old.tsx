@@ -44,7 +44,7 @@ export function ProjectCard({
           <h2 className="text-[1.75rem] font-semibold leading-8">
             {href ? (
               <Link href={href} aria-label={`Link to ${title}`}>
-                <GrowingUnderline data-umami-event="project-title-link">{title}</GrowingUnderline>
+                <GrowingUnderline plausible-event-name="project-title-link">{title}</GrowingUnderline>
               </Link>
             ) : (
               title
@@ -77,7 +77,7 @@ export function ProjectCard({
             className="text-base font-medium leading-6"
             aria-label={`Link to ${title}`}
           >
-            <GrowingUnderline data-umami-event="project-learn-more">
+            <GrowingUnderline plausible-event-name="project-learn-more">
               Learn more &rarr;
             </GrowingUnderline>
           </Link>

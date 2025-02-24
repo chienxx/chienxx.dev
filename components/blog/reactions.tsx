@@ -128,7 +128,7 @@ function Reaction({
       onClick={handleReact}
       onMouseLeave={handleMouseLeave}
       className="relative flex flex-col items-center justify-center gap-1.5"
-      data-umami-event="post-reaction"
+      plausible-event-name="post-reaction"
     >
       <Twemoji
         emoji={emoji}

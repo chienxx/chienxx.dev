@@ -45,7 +45,7 @@ export function FooterMeta() {
       <div className="flex items-center gap-1 font-medium">
         <Github className="h-5 w-5" />
         <Link href={SITE_METADATA.siteRepo} className="ml-1">
-          <GrowingUnderline data-umami-event="view-repo">{repoName}</GrowingUnderline>
+          <GrowingUnderline plausible-event-name="view-repo">{repoName}</GrowingUnderline>
         </Link>
         <span>-</span>
         <span className="inline-flex items-center text-gray-500 dark:text-gray-400">
@@ -62,7 +62,7 @@ export function FooterMeta() {
       <div className="flex items-center gap-2">
         <Clock className="h-5 w-5" />
         <Link href={TIME_IS}>
-          <GrowingUnderline className="font-medium" data-umami-event="footer-time">
+          <GrowingUnderline className="font-medium" plausible-event-name="footer-time">
             {time} <span className="text-gray-500 dark:text-gray-400">- {diff}</span>
           </GrowingUnderline>
         </Link>

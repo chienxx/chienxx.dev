@@ -36,7 +36,7 @@ export function SocialShare({ postUrl, filePath, title, className }: SocialButto
           'flex items-center gap-1 px-3 py-1 font-medium text-gray-500 dark:text-gray-400',
           className
         )}
-        data-umami-event="social-share"
+        plausible-event-name="social-share"
       >
         <span>Share</span>
         <Share2 strokeWidth={1.5} size={16} />

@@ -70,7 +70,7 @@ export function ProfileCardInfo() {
                 href={href}
                 rel="noreferrer"
                 className="flex items-center underline-offset-4 hover:underline"
-                data-umami-event={umamiEvent}
+                plausible-event-name={umamiEvent}
               >
                 <Icon />
                 <span className="ml-px text-gray-500">/</span>

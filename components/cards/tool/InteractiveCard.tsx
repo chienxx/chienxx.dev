@@ -16,7 +16,7 @@ const InteractiveCard = ({ title, description, imgSrc, href, label }) => (
         <h2 className="text-[20px] font-bold leading-[28px]">
           {href ? (
             <Link href={href} aria-label={`Link to ${title}`}>
-              <GrowingUnderline data-umami-event="project-title-link">{title}</GrowingUnderline>
+              <GrowingUnderline plausible-event-name="project-title-link">{title}</GrowingUnderline>
             </Link>
           ) : (
             title

@@ -31,7 +31,7 @@ export function LatestPosts({
             )}
             onClick={() => setView('posts')}
           >
-            <GrowingUnderline data-umami-event="latest-posts">posts</GrowingUnderline>
+            <GrowingUnderline plausible-event-name="latest-posts">posts</GrowingUnderline>
           </button>
           <span className="mx-1">/</span>
           <button
@@ -43,12 +43,12 @@ export function LatestPosts({
             )}
             onClick={() => setView('snippets')}
           >
-            <GrowingUnderline data-umami-event="latest-snippets">snippets</GrowingUnderline>
+            <GrowingUnderline plausible-event-name="latest-snippets">snippets</GrowingUnderline>
           </button>
         </div>
         <div className="flex items-center justify-end text-base font-medium leading-6">
           <Link href={view === 'posts' ? '/blog' : '/snippets'} className="" aria-label="All posts">
-            <GrowingUnderline data-umami-event="all-posts">
+            <GrowingUnderline plausible-event-name="all-posts">
               <span className="hidden md:inline-block">View all {view}</span>
               <span className="md:hidden">More</span> &rarr;
             </GrowingUnderline>

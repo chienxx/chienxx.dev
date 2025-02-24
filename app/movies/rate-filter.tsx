@@ -41,7 +41,7 @@ export function RateFilter({ rate, type }: { rate: RateType; type: TitleType }) 
         <MenuButton
           aria-label="More links"
           className="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-3 py-1.5 font-medium dark:border-gray-700"
-          data-umami-event="movies-rate-filter"
+          plausible-event-name="movies-rate-filter"
         >
           <span>
             {label}/10 <span className="hidden md:inline">stars</span>

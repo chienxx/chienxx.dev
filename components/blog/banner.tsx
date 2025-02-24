@@ -38,14 +38,14 @@ function Credit({ author, id, className }: CreditProps) {
           className="underline-offset-4 hover:underline"
           href={`https://unsplash.com/@${author}`}
         >
-          <span data-umami-event="banner-author">@{author}</span>
+          <span plausible-event-name="banner-author">@{author}</span>
         </Link>{' '}
         on{' '}
         <Link
           className="underline-offset-4 hover:underline"
           href={`https://unsplash.com/photos/${id}`}
         >
-          <span data-umami-event="banner-unsplash">Unsplash</span>
+          <span plausible-event-name="banner-unsplash">Unsplash</span>
         </Link>
       </div>
     )

@@ -19,7 +19,7 @@ export function PostNav({
           <div className="flex flex-col gap-1">
             <NavLabel label={`←  ${prevLabel}`} />
             <Link href={`/${prev.path}`}>
-              <GrowingUnderline data-umami-event="post-nav-prev">{prev.title}</GrowingUnderline>
+              <GrowingUnderline plausible-event-name="post-nav-prev">{prev.title}</GrowingUnderline>
             </Link>
           </div>
         ) : (
@@ -29,7 +29,7 @@ export function PostNav({
           <div className="flex flex-col items-end gap-1 text-right">
             <NavLabel label={`${nextLabel}  →`} />
             <Link href={`/${next.path}`}>
-              <GrowingUnderline data-umami-event="post-nav-next">{next.title}</GrowingUnderline>
+              <GrowingUnderline plausible-event-name="post-nav-next">{next.title}</GrowingUnderline>
             </Link>
           </div>
         )}

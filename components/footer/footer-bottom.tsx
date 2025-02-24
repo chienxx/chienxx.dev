@@ -19,7 +19,7 @@ export function FooterBottom() {
       />
       <div className="flex items-center">
         <Link href={SITE_METADATA.siteRepo}>
-          <span data-umami-event="made-in-vietnam">
+          <span plausible-event-name="made-in-vietnam">
           </span>
         </Link>
       </div>

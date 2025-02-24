@@ -38,7 +38,7 @@ export function MobileNav() {
           'rounded p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700',
           'flex items-center justify-center sm:hidden',
         ])}
-        data-umami-event="mobile-nav-toggle"
+        plausible-event-name="mobile-nav-toggle"
       >
         <button aria-label="Toggle Menu" onClick={onToggleNav}>
           <Menu size={22} />

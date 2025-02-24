@@ -48,7 +48,7 @@ export function Header() {
                 <Link key={title} href={href} className="px-3 py-1 font-medium">
                   <GrowingUnderline
                     className={clsx(isActive && 'bg-[length:100%_50%]')}
-                    data-umami-event={`nav-${href.replace('/', '')}`}
+                    plausible-event-name={`nav-${href.replace('/', '')}`}
                   >
                     {title}
                   </GrowingUnderline>

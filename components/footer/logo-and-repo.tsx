@@ -18,7 +18,7 @@ export function LogoAndRepo() {
       <Logo className="mr-4" />
       <Link href={SITE_METADATA.siteRepo} rel="noreferrer">
         <GrowingUnderline
-          data-umami-event="footer-view-source"
+          plausible-event-name="footer-view-source"
           className="flex items-center gap-2 font-medium"
         >
           {SITE_METADATA.headerTitle}
@@ -32,7 +32,7 @@ export function LogoAndRepo() {
             className="mr-1 text-indigo-700 dark:text-indigo-400"
             title={repo.lastCommit.message}
           >
-            <GrowingUnderline data-umami-event="repo-last-commit" className="flex items-center">
+            <GrowingUnderline plausible-event-name="repo-last-commit" className="flex items-center">
               {repo.lastCommit.abbreviatedOid}
             </GrowingUnderline>
           </Link>

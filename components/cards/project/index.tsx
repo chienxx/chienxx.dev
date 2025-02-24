@@ -29,7 +29,7 @@ export function ProjectCard({ project }: { project: (typeof PROJECTS)[0] }) {
           <h2 className="text-[22px] font-bold leading-[30px]">
             {href ? (
               <Link href={href} aria-label={`Link to ${title}`}>
-                <GrowingUnderline data-umami-event="project-title-link">{title}</GrowingUnderline>
+                <GrowingUnderline plausible-event-name="project-title-link">{title}</GrowingUnderline>
               </Link>
             ) : (
               title
@@ -64,7 +64,7 @@ export function ProjectCard({ project }: { project: (typeof PROJECTS)[0] }) {
               {links?.map(({ title, url }, idx) => (
                 <Fragment key={url}>
                   <Link href={url} className="flex items-center gap-1.5">
-                    <GrowingUnderline className="font-medium" data-umami-event="project-link">
+                    <GrowingUnderline className="font-medium" plausible-event-name="project-link">
                       {title}
                     </GrowingUnderline>
                   </Link>

@@ -43,7 +43,7 @@ export function ThemeSwitcher() {
       <Menu as="div" className="relative inline-block text-left">
         <div
           className="flex items-center justify-center rounded p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700"
-          data-umami-event="nav-theme-switcher"
+          plausible-event-name="nav-theme-switcher"
         >
           <MenuButton aria-label="Theme switcher">
             {mounted ? (

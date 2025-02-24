@@ -81,7 +81,7 @@ function Credit({ image, className }: { image: string; className?: string }) {
           target="_blank"
           rel="noreferrer"
         >
-          <span data-umami-event="banner-author">@{author}</span>
+          <span plausible-event-name="banner-author">@{author}</span>
         </a>{' '}
         on{' '}
         <a
@@ -89,9 +89,9 @@ function Credit({ image, className }: { image: string; className?: string }) {
           href={`https://unsplash.com/photos/${id}`}
           target="_blank"
           rel="noreferrer"
-          data-umami-event="unsplash-link"
+          plausible-event-name="unsplash-link"
         >
-          <span data-umami-event="banner-unsplash">Unsplash</span>
+          <span plausible-event-name="banner-unsplash">Unsplash</span>
         </a>
       </div>
     )

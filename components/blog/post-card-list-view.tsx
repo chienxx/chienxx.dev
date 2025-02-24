@@ -57,7 +57,7 @@ export function PostCardListView({
               </dl>
               <h2 className="pb-1 text-xl font-bold tracking-tight md:text-2xl">
                 <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
-                  <GrowingUnderline data-umami-event="latest-post-title" duration={500}>
+                  <GrowingUnderline plausible-event-name="latest-post-title" duration={500}>
                     {title}
                   </GrowingUnderline>
                 </Link>
@@ -74,7 +74,7 @@ export function PostCardListView({
               className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-300"
               aria-label={`Read "${title}"`}
             >
-              <GrowingUnderline data-umami-event="latest-post-read-more">
+              <GrowingUnderline plausible-event-name="latest-post-read-more">
                 Read article →
               </GrowingUnderline>
             </Link>

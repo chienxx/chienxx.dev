@@ -9,7 +9,7 @@ export function SocialAccounts({ className }: { className?: string }) {
       <a
         href={SITE_METADATA.github}
         target="_blank"
-        data-umami-event="contact-github"
+        plausible-event-name="contact-github"
         className="text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
         rel="noopener noreferrer"
       >
@@ -19,7 +19,7 @@ export function SocialAccounts({ className }: { className?: string }) {
       <a
         href={SITE_METADATA.x}
         target="_blank"
-        data-umami-event="contact-twitter"
+        plausible-event-name="contact-twitter"
         className="text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
         rel="noopener noreferrer"
       >
@@ -30,7 +30,7 @@ export function SocialAccounts({ className }: { className?: string }) {
       <a
         href={`mailto:${SITE_METADATA.email}`}
         target="_self"
-        data-umami-event="contact-mail"
+        plausible-event-name="contact-mail"
         className="text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
         rel="noopener noreferrer"
       >
