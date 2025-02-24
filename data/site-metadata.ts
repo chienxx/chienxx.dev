@@ -27,8 +27,9 @@ export const SITE_METADATA = {
   imdbRatingsList: 'https://www.imdb.com/user/ur154483197/ratings/?view=grid',
   analytics: {
     plausibleAnalytics: {
-      plausibleDataDomain: 'blog.jxzsite.com',
+      plausibleDataDomain: 'jxzsite.com',
       src: 'https://collect.jxzsite.com/js/script.js',
+      url: 'https://collect.jxzsite.com',
     },
   },
   newsletter: {
@@ -42,7 +43,7 @@ export const SITE_METADATA = {
       repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID!,
       category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY!,
       categoryId: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID!,
-      mapping: 'title', // supported options: pathname, url, title
+      mapping: 'pathname', // supported options: pathname, url, title
       reactions: '1', // Emoji reactions: 1 = enable / 0 = disable
       metadata: '0',
       theme: 'light',

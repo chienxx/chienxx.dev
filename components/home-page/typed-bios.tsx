@@ -41,9 +41,9 @@ export function TypedBios() {
     >
       <ul id="bios" className="hidden">
         <li>I was born in the ancient capital of the Six Dynasties - NanJing. 🏯</li>
-        <li>Mainly focused on Java web development, with occasional big data work. 🌐</li>
+        <li>mainly focused on Java web development, with occasional big data work. 🌐</li>
         <li>Currently learning Next.js with the goal of becoming a full-stack developer. 💻</li>
-        <li>I am passionate about badminton. 🏸</li>
+        <li>I'm passionate about badminton. 🏸</li>
         <li>I love the old 80‘s and 90’s classics. 📀</li>
         <li>Kiwis 🥝 and blueberries 🫐 are my favourite fruits. </li>
       </ul>

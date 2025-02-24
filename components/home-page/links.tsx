@@ -30,7 +30,7 @@ const LINKS = [
   },
   {
     title: `Traffic and insights`,
-    href: SITE_METADATA.analytics.plausibleAnalytics.src,
+    href: SITE_METADATA.analytics.plausibleAnalytics.url,
     emoji: 'bar-chart',
     event: 'home-link-analytics',
   },

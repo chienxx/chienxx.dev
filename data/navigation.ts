@@ -25,5 +25,5 @@ export const FOOTER_PERSONAL_STUFF = [
   { href: '/tools', title: 'Tools' },
   { href: '/movies', title: 'Movies' },
   { href: SITE_METADATA.music, title: 'Music' },
-  { href: SITE_METADATA.analytics.plausibleAnalytics.src, title: 'Analytics' },
+  { href: SITE_METADATA.analytics.plausibleAnalytics.url, title: 'Analytics' },
 ]
