@@ -1,6 +1,7 @@
 {
   "name": "chienxx.dev",
   "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "start": "PORT=3773 next dev",
     "dev": "PORT=3772 cross-env INIT_CWD=$PWD next dev",
