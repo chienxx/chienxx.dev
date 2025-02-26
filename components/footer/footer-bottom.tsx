@@ -20,9 +20,7 @@ export function FooterBottom() {
       />
       <div className="flex items-center">
         <Link href={SITE_METADATA.vercel}>
-          <span plausible-event-name="link+to+vercel">
-            <DeployItem />
-          </span>
+          <DeployItem />
         </Link>
       </div>
     </div>
