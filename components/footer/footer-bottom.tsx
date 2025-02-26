@@ -2,6 +2,7 @@ import { clsx } from 'clsx'
 import { Link } from '~/components/ui/link'
 import { SpotifyNowPlaying } from '~/components/ui/now-playing'
 import { SITE_METADATA } from '~/data/site-metadata'
+import DeployItem from '~/icons/dov.svg'
 
 export function FooterBottom() {
   return (
@@ -18,8 +19,9 @@ export function FooterBottom() {
         showCover
       />
       <div className="flex items-center">
-        <Link href={SITE_METADATA.siteRepo}>
-          <span plausible-event-name="made-in-vietnam">
+        <Link href={SITE_METADATA.vercel}>
+          <span plausible-event-name="link+to+vercel">
+            <DeployItem />
           </span>
         </Link>
       </div>

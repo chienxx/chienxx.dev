@@ -52,10 +52,6 @@ const securityHeaders = [
     key: 'Permissions-Policy',
     value: 'camera=(), microphone=(), geolocation=()',
   },
-  {
-    key: 'Access-Control-Allow-Origin',
-    value: '*.jxzsite.com',
-  },
 ]
 
 const output = process.env.EXPORT ? 'export' : undefined

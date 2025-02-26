@@ -25,7 +25,7 @@ const SOCIALS = [
     platform: 'discord',
     handle: getAccountHandle(SITE_METADATA.discord),
     href: SITE_METADATA.discord,
-    Icon: () => <DiscordIcon className="h-6 w-6" />,
+    Icon: () => <DiscordIcon className="h-6 w-6" fill="#fff"/>,
     umamiEvent: 'profile-card-linkedin',
   },
   {
@@ -40,7 +40,7 @@ const SOCIALS = [
 export function ProfileCardInfo() {
   return (
     <div className="hidden py-4 md:block md:px-5">
-      <h3 className="text-xl font-semibold text-gray-800 dark:text-white">chienxx(Tschën)</h3>
+      <h3 className="text-xl font-semibold text-gray-800 dark:text-white">chienxx(Thomas)</h3>
       <h5 className="py-2 text-gray-500 dark:text-gray-400">Learner | Builder</h5>
       <div className="mb-2 mt-4 space-y-4">
         <div className="flex items-center text-gray-700 dark:text-gray-200">

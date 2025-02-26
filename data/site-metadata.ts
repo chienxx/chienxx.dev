@@ -1,7 +1,7 @@
 export const SITE_METADATA = {
-  title: `Tschën's dev blog`,
-  author: 'Tschën',
-  headerTitle: `Tschën's dev blog`,
+  title: `The Blog by Thomas | Tech & Life`,
+  author: 'chienxx',
+  headerTitle: `The Blog by Thomas`,
   description:
     'Explore my personal blog where I share insights on software development, computer technology, and snippets of daily life.',
   language: 'en-us',
@@ -16,6 +16,7 @@ export const SITE_METADATA = {
   discord: 'https://discord.com/users/chienxx',
   x: 'https://x.com/chienxxl',
   music: 'https://music.jxzsite.com/',
+  vercel: 'https://vercel.com/',
   locale: 'en-US',
   stickyNav: false,
   goodreadsFeedUrl: 'https://www.goodreads.com/review/list_rss/179720035',
@@ -24,7 +25,7 @@ export const SITE_METADATA = {
     plausibleAnalytics: {
       plausibleDataDomain: 'jxzsite.com',
       src: 'https://collect.jxzsite.com/js/script.js',
-      url: 'https://collect.jxzsite.com',
+      shareLink: 'https://collect.jxzsite.com/share/jxzsite.com?auth=1x_qD5KKdN5vRNpyBWJn1',
     },
   },
   newsletter: {
