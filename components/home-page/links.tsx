@@ -42,7 +42,7 @@ export function BlogLinks() {
       {LINKS.map(({ title, href, emoji, event }) => (
         <Link key={title} href={href} className="flex items-center gap-1.5">
           <Twemoji emoji={emoji} />
-          <GrowingUnderline plausible-event-name={event} className="leading-6">
+          <GrowingUnderline className="leading-6">
             {title}
           </GrowingUnderline>
         </Link>

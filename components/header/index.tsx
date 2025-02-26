@@ -46,10 +46,7 @@ export function Header() {
               let isActive = pathname.startsWith(href)
               return (
                 <Link key={title} href={href} className="px-3 py-1 font-medium">
-                  <GrowingUnderline
-                    className={clsx(isActive && 'bg-[length:100%_50%]')}
-                    plausible-event-name={`nav-${href.replace('/', '')}`}
-                  >
+                  <GrowingUnderline className={clsx(isActive && 'bg-[length:100%_50%]')}>
                     {title}
                   </GrowingUnderline>
                 </Link>

@@ -42,11 +42,11 @@ export function SpotifyNowPlaying({
               title={`${title} - ${artist || 'Spotify'}`}
             >
               {songEffect === 'underline' ? (
-                <GrowingUnderline plausible-event-name="spotify-now-playing-view-song">
+                <GrowingUnderline className="plausible-event-name=spotify+now+playing+view+song" >
                   {title}
                 </GrowingUnderline>
               ) : (
-                <span plausible-event-name="spotify-now-playing-view-song">{title}</span>
+                <span className="plausible-event-name=spotify+now+playing+view+song">{title}</span>
               )}
             </Link>
           </>

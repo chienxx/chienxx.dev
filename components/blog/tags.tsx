@@ -28,7 +28,7 @@ export function Tag({ text, size = 'sm' }: { text: string; size?: 'sm' | 'md' })
         size === 'sm' ? 'text-sm' : 'text-base',
       ])}
     >
-      <span plausible-event-name={`tag-${tagName}`}>#{tagName}</span>
+      <span className="plausible-event-name={`tag+${tagName}`}">#{tagName}</span>
     </Link>
   )
 }

@@ -31,7 +31,7 @@ export function LatestPosts({
             )}
             onClick={() => setView('posts')}
           >
-            <GrowingUnderline plausible-event-name="latest-posts">posts</GrowingUnderline>
+            <GrowingUnderline className="plausible-event-name=latest+posts">posts</GrowingUnderline>
           </button>
           <span className="mx-1">/</span>
           <button
@@ -43,7 +43,9 @@ export function LatestPosts({
             )}
             onClick={() => setView('snippets')}
           >
-            <GrowingUnderline plausible-event-name="latest-snippets">snippets</GrowingUnderline>
+            <GrowingUnderline className="plausible-event-name=latest+snippets">
+              snippets
+            </GrowingUnderline>
           </button>
         </div>
         <div className="flex items-center justify-end text-base font-medium leading-6">

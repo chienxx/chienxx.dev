@@ -19,21 +19,18 @@ const SOCIALS = [
     handle: getAccountHandle(SITE_METADATA.github),
     href: SITE_METADATA.github,
     Icon: () => <GithubIcon size={20} strokeWidth={1.5} />,
-    umamiEvent: 'profile-card-github',
   },
   {
     platform: 'discord',
     handle: getAccountHandle(SITE_METADATA.discord),
     href: SITE_METADATA.discord,
-    Icon: () => <DiscordIcon className="h-6 w-6" fill="#fff"/>,
-    umamiEvent: 'profile-card-linkedin',
+    Icon: () => <DiscordIcon className="h-6 w-6" fill="#fff" />,
   },
   {
     platform: 'x',
     handle: getAccountHandle(SITE_METADATA.x),
     href: SITE_METADATA.x,
     Icon: () => <XIcon className="h-4 w-4" fill="#fff" viewBox="0 0 1200 1227" />,
-    umamiEvent: 'profile-card-x',
   },
 ]
 
@@ -63,14 +60,13 @@ export function ProfileCardInfo() {
           </a>
         </div>
         <div className="flex items-center gap-2.5 text-gray-700 dark:text-gray-200">
-          {SOCIALS.map(({ platform, handle, href, Icon, umamiEvent }, idx) => (
+          {SOCIALS.map(({ platform, handle, href, Icon }, idx) => (
             <Fragment key={platform}>
               <a
                 target="_blank"
                 href={href}
                 rel="noreferrer"
                 className="flex items-center underline-offset-4 hover:underline"
-                plausible-event-name={umamiEvent}
               >
                 <Icon />
                 <span className="ml-px text-gray-500">/</span>

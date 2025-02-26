@@ -127,8 +127,7 @@ function Reaction({
     <button
       onClick={handleReact}
       onMouseLeave={handleMouseLeave}
-      className="relative flex flex-col items-center justify-center gap-1.5"
-      plausible-event-name="post-reaction"
+      className="plausible-event-name=post+reaction relative flex flex-col items-center justify-center gap-1.5"
     >
       <Twemoji
         emoji={emoji}

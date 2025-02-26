@@ -13,7 +13,7 @@ export function MoreLinks() {
     <div className="flex items-center">
       <Menu as="div" className="relative inline-block text-left">
         <MenuButton aria-label="More links" className="px-3 py-1 font-medium">
-          <GrowingUnderline plausible-event-name="nav-more-links" className="flex items-center gap-1">
+          <GrowingUnderline className="plausible-event-name=nav+more+links flex items-center gap-1">
             <span>More</span>
             <ChevronDown strokeWidth={1.5} size={20} />
           </GrowingUnderline>
@@ -38,7 +38,7 @@ export function MoreLinks() {
                       onClick={close}
                     >
                       <Twemoji emoji={emoji} />
-                      <span plausible-event-name={`nav-${href.replace('/', '')}`}>{title}</span>
+                      <span>{title}</span>
                     </Link>
                   )}
                 </MenuItem>

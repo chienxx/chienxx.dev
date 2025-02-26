@@ -37,8 +37,8 @@ export function MobileNav() {
         className={clsx([
           'rounded p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700',
           'flex items-center justify-center sm:hidden',
+          'plausible-event-name=mobile+nav+toggle',
         ])}
-        plausible-event-name="mobile-nav-toggle"
       >
         <button aria-label="Toggle Menu" onClick={onToggleNav}>
           <Menu size={22} />

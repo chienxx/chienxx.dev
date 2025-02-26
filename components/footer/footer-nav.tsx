@@ -50,10 +50,7 @@ function FooterLink({ link }: { link: (typeof FOOTER_NAV_LINKS)[0] }) {
   let isExternal = href.startsWith('http')
   return (
     <Link href={href}>
-      <GrowingUnderline
-        plausible-event-name={`footer-nav-${href.replace('/', '')}`}
-        className="inline-flex items-center"
-      >
+      <GrowingUnderline className="inline-flex items-center">
         {title}
         {isExternal && <ExternalLink className="-mt-1 ml-1.5" size={18} strokeWidth={1.5} />}
       </GrowingUnderline>

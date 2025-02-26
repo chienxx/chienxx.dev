@@ -9,8 +9,7 @@ export function SocialAccounts({ className }: { className?: string }) {
       <a
         href={SITE_METADATA.github}
         target="_blank"
-        plausible-event-name="contact-github"
-        className="text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
+        className="plausible-event-name=contact+github text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
         rel="noopener noreferrer"
       >
         <span className="sr-only">Github</span>
@@ -19,8 +18,7 @@ export function SocialAccounts({ className }: { className?: string }) {
       <a
         href={SITE_METADATA.x}
         target="_blank"
-        plausible-event-name="contact-twitter"
-        className="text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
+        className="plausible-event-name=contact+twitter text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
         rel="noopener noreferrer"
       >
         <span className="sr-only">X</span>
@@ -30,8 +28,7 @@ export function SocialAccounts({ className }: { className?: string }) {
       <a
         href={`mailto:${SITE_METADATA.email}`}
         target="_self"
-        plausible-event-name="contact-mail"
-        className="text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
+        className="plausible-event-name=contact+mail text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
         rel="noopener noreferrer"
       >
         <span className="sr-only">Mail</span>

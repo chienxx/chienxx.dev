@@ -33,10 +33,9 @@ export function SocialShare({ postUrl, filePath, title, className }: SocialButto
       <MenuButton
         aria-label="More links"
         className={clsx(
-          'flex items-center gap-1 px-3 py-1 font-medium text-gray-500 dark:text-gray-400',
+          'plausible-event-name=social+share flex items-center gap-1 px-3 py-1 font-medium text-gray-500 dark:text-gray-400',
           className
         )}
-        plausible-event-name="social-share"
       >
         <span>Share</span>
         <Share2 strokeWidth={1.5} size={16} />
