@@ -29,13 +29,13 @@ export default async function MoviesPage() {
             <p className="mt-3 italic">
               *Data is exported from my{' '}
               <Link href={SITE_METADATA.imdbRatingsList} className="font-medium">
-                <GrowingUnderline plausible-event-name="goodreads-feed" active>
+                <GrowingUnderline class="plausible-event-name=goodreads+feed" active>
                   IMDB ratings list
                 </GrowingUnderline>
               </Link>
               , with extra details pulled in from the{' '}
               <Link href="https://www.omdbapi.com/" className="font-medium">
-                <GrowingUnderline plausible-event-name="goodreads-feed" active>
+                <GrowingUnderline class="plausible-event-name=goodreads+feed" active>
                   OMDB API
                 </GrowingUnderline>
               </Link>{' '}
