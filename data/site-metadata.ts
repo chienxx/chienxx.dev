@@ -1,7 +1,7 @@
 export const SITE_METADATA = {
-  title: `The Blog by Thomas | Tech & Life`,
+  title: `Thomas’ Dev Journal | Tech, Life & Insights`,
   author: 'chienxx',
-  headerTitle: `The Blog by Thomas`,
+  headerTitle: `Thomas’ Dev Journal`,
   description:
     'Explore my personal blog where I share insights on software development, computer technology, and snippets of daily life.',
   language: 'en-us',
