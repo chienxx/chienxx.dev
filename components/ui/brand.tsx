@@ -44,6 +44,7 @@ import Env from '~/icons/env.svg'
 import Html from '~/icons/html5.svg'
 import Postcss from '~/icons/postcss.svg'
 import Commitlint from '~/icons/commitlint.svg'
+import Docker from '~/icons/docker.svg'
 
 export let BrandsMap: Record<
   string,
@@ -247,6 +248,10 @@ export let BrandsMap: Record<
     Icon: Pnpm,
     url: 'https://pnpm.io/',
   },
+  Docker: {
+    Icon: Docker,
+    url: 'https://www.docker.com/',
+  }
 }
 
 export function Brand(props: {
