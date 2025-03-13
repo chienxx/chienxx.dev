@@ -2,9 +2,9 @@
 
 import { Menu, MenuButton, MenuItems, Transition } from '@headlessui/react'
 import { clsx } from 'clsx'
-import { Facebook, Link, Linkedin, Share2 } from 'lucide-react'
+import { Facebook, Link, Share2 } from 'lucide-react'
 import { Fragment, useState } from 'react'
-import { FacebookShareButton, LinkedinShareButton, TwitterShareButton } from 'react-share'
+import { FacebookShareButton, TwitterShareButton } from 'react-share'
 import { SITE_METADATA } from '~/data/site-metadata'
 import XIcon from '~/icons/x.svg'
 import { DiscussOnX } from './discuss-on-x'
@@ -78,14 +78,6 @@ export function SocialShare({ postUrl, filePath, title, className }: SocialButto
               <XIcon className="h-4 w-4" fill="#fff" viewBox="0 0 1200 1227" />
               <span className="">Share on X (Twitter)</span>
             </TwitterShareButton>
-            <LinkedinShareButton
-              url={postUrl}
-              title={title}
-              className="flex items-center gap-2.5 !text-gray-600 hover:!text-gray-900 dark:!text-gray-400 dark:hover:!text-gray-100"
-            >
-              <Linkedin strokeWidth={1.5} size={18} />
-              <span className="">Share on LinkedIn</span>
-            </LinkedinShareButton>
             <FacebookShareButton
               url={postUrl}
               className="flex items-center gap-2.5 !text-gray-600 hover:!text-gray-900 dark:!text-gray-400 dark:hover:!text-gray-100"
