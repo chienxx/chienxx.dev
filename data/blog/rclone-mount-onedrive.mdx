@@ -1,6 +1,7 @@
 ---
 title: 'Rclone 挂载 OneDrive，实现云存储与本地访问的完美融合'
 date: '2025-02-04'
+lastmod: '2025-03-20'
 tags: ['vps', 'guide', 'navidrome', 'linux']
 draft: false
 summary: '通过 Rclone 挂载 OneDrive 云盘，可以轻松将云存储与本地文件系统无缝连接，享受便捷的文件访问与管理体验。无论是大文件的快速传输，还是日常文件的同步与备份，Rclone 提供了一个高效、灵活的解决方案，让你像使用本地硬盘一样操作云端数据。'
@@ -117,6 +118,58 @@ rclone mount onedrive:/Music /apps/navidrome/music --vfs-cache-mode full --vfs-c
 
 使用 `df -h` 命令查看挂载情况
 ![df](https://image.jxzsite.com/i/2025/02/24/r0lbky.png)
+
+## 设置开机自启
+
+使用 `systemd` 来管理 rclone mount 进程，具体步骤如下：
+
+- 创建服务文件
+
+```bash
+sudo vim /etc/systemd/system/rclone-onedrive.service
+```
+
+- 填入以下内容
+
+```bash
+[Unit]
+Description=Rclone Mount OneDrive
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rclone mount onedrive:/Music /apps/navidrome/music --vfs-cache-mode full --vfs-cache-max-size 10G --buffer-size 200M
+MemoryHigh=400M
+MemoryMax=1G
+Restart=always
+User=root
+
+[Install]
+WantedBy=default.target
+```
+
+- 重新加载 systemd 并启用服务
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable rclone-onedrive
+sudo systemctl start rclone-onedrive
+```
+
+- 检查运行状态
+
+```bash
+systemctl status rclone-onedrive
+```
+
+- 测试开机自启动
+
+```bash
+## 重启服务器
+sudo reboot
+## 检查 rclone 进程
+ps -ef|grep rclone
+```
 
 ## 总结
 
