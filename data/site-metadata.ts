@@ -10,7 +10,7 @@ export const SITE_METADATA = {
   siteRepo: 'https://github.com/chienxx/chienxx.dev',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.jpeg`,
-  email: 'lancertut@yahoo.com',
+  email: 'contact@jxzsite.com',
   github: 'https://github.com/chienxx',
   spotify: 'https://open.spotify.com/user/31e2umgbxsh6kjdd4vzmex6uggk4',
   discord: 'https://discord.com/users/chienxx',
