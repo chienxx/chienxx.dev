@@ -32,7 +32,7 @@ export function AuthorLayout({ children }: Props) {
                 Hi there <Twemoji emoji="waving-hand" />
               </h2>
               <p>
-                I'm <strong>Thomas</strong>, a backend engineer from <strong>Nanjing</strong>,
+                I'm <strong>Kanade</strong>, a backend engineer from <strong>Nanjing</strong>,
                 mainly focused on <strong>Java web</strong> development, with occasional big data
                 work . The technology stack involved includes <strong>Spring Cloud</strong>,{' '}
                 <strong>RabbitMQ</strong>, <strong>Elasticsearch</strong>,{' '}
